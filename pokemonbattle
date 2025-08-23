@@ -1,0 +1,20 @@
+import random 
+def attack1(a,b)
+    damage=random.randint(0,a)
+    return
+print("pokemon available are 1.charizard,2.blastoise,3.venasaur")
+choice=input("choose your pokemon , the number ")
+if choice=="1":
+    print("you have choosen charizard")
+    a=3
+    b=20
+elif choice=="2":
+    print("you have choosen blastoise")
+    a=1
+    b=30
+elif choice=="3":
+    print("you have choosen venasaur")
+    a=2
+    b=25
+else:
+    print("invalid choice")
