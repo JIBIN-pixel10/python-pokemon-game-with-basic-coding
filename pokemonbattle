@@ -9,6 +9,7 @@ def battle(a,b,d,f):
         damage=attack1(a,b)
         print("you dealt",damage,"damage")
         f-=damage
+        print("computer's pokemon has",f,"health left")
         if f<=0:
             print("you win")
             break
@@ -16,6 +17,7 @@ def battle(a,b,d,f):
         damage=attack1(d,f)
         print("computer dealt",damage,"damage")
         b-=damage
+        print("your pokemon has",b,"health left")
         if b<=0:
             print("computer wins")
             break
