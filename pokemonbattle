@@ -1,7 +1,7 @@
 import random 
-def attack1(a,b)
+def attack1(a,b):
     damage=random.randint(0,a)
-    return
+    return damage 
 print("pokemon available are 1.charizard,2.blastoise,3.venasaur")
 choice=input("choose your pokemon , the number ")
 if choice=="1":
@@ -18,3 +18,35 @@ elif choice=="3":
     b=25
 else:
     print("invalid choice")
+c=random.randint(1,3)
+if c==1:
+    print("computer has choosen charizard")
+    d=3
+    f=20
+    def battle(a,b,d,f):
+elif c==2:
+    print("computer has choosen blastoise")
+    d=1
+    f=30
+    def battle(a,b,d,f):
+elif c==3:
+    print("computer has choosen venasaur")
+    d=2
+    f=25
+    def battle(a,b,d,f):
+def battle(a,b,d,f):
+    while True:
+        print("your pokemon's turn")
+        damage=attack1(a,b)
+        print("you dealt",damage,"damage")
+        f-=damage
+        if f<=0:
+            print("you win")
+            break
+        print("computer's pokemon's turn")
+        damage=attack1(d,f)
+        print("computer dealt",damage,"damage")
+        b-=damage
+        if b<=0:
+            print("computer wins")
+            break
